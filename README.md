@@ -1,1 +1,1 @@
-# my_namaz_app_new
+# my_namaz_app

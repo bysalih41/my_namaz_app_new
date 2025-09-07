@@ -1,0 +1,11 @@
+name: my_namaz_app
+description: Islamic app with Quran, prayer times, and teaching
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  google_fonts: ^5.0.0
