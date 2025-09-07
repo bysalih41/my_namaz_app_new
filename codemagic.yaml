@@ -5,22 +5,19 @@ workflows:
     instance_type: mac_mini
     environment:
       flutter: stable
-      vars:
-        ANDROID_KEYSTORE: Encrypted:YOUR_KEYSTORE
-        ANDROID_KEYSTORE_PASSWORD: Encrypted:YOUR_KEYSTORE_PASSWORD
-        ANDROID_KEY_ALIAS: Encrypted:YOUR_KEY_ALIAS
-        ANDROID_KEY_PASSWORD: Encrypted:YOUR_KEY_PASSWORD
     scripts:
       - name: Install dependencies
         script: |
           flutter clean
           flutter pub get
-      - name: Build APK
+      - name: Build Debug APK
         script: |
-          flutter build apk --release
+          flutter build apk --debug
+      # Eğer release APK oluşturmak istersen bu adımı aktif et
+      # - name: Build Release APK
+      #   script: |
+      #     flutter build apk --release
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
-    publishing:
-      email:
-        recipients:
-          - your-email@example.com
+      - build/app/outputs/flutter-apk/app-debug.apk
+      # Release APK için
+      # - build/app/outputs/flutter-apk/app-release.apk
