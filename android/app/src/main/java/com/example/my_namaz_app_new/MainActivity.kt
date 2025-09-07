@@ -1,6 +1,6 @@
-package com.example.my_namaz_app_new
+package com.yourcompany.my_namaz_app;
 
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterActivity;
 
-class MainActivity: FlutterActivity() {
+public class MainActivity extends FlutterActivity {
 }
