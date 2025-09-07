@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = 'my_namaz_app_new'
+rootProject.name = 'my_namaz_app'
