@@ -1,5 +1,6 @@
 name: my_namaz_app
 description: Islamic app with Quran, prayer times, and teaching
+publish_to: 'none' # Eğer paketi yayınlamayacaksan
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -9,3 +10,16 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.5
   google_fonts: ^5.0.0
+  # Eğer ek paketler kullanıyorsan buraya ekle
+  # ör: http: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Eğer resim veya json dosyaların varsa buraya ekle
+    # - assets/images/
